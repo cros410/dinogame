@@ -33,6 +33,10 @@ function keyPressed() {
   }
 }
 
+function touchStarted() {
+  character.jump()
+}
+
 function draw() {
   speed+=acceleration
   if (random(1) < 0.009 && activeEnemiesCount < 1) {
