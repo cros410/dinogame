@@ -8,7 +8,8 @@ class Character {
   }
 
   jump() {
-    if (this.y === ( height - this.r ) - 80 ) {
+    if (this.y === (height - this.r) - 80) {
+      jump.play()
       this.vy = -23
     }
   }
@@ -28,9 +29,9 @@ class Character {
   }
 
   show() {
-    // image(cImg, this.x, this.y, this.r, this.r)
+    image(cImg, this.x, this.y, this.r, this.r)
     // fill(255, 50)
-    fill(color(255, 255, 255));
-    rect(this.x, this.y, this.r, this.r)
+    // fill(color(255, 255, 255));
+    // rect(this.x, this.y, this.r, this.r)
   }
 }
